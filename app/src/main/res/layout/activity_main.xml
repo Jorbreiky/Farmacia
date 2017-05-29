@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="sms.vaio.pedidomedicina.MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ETCorreo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo Electronico"
+                android:text="jorbreiky@gmail.com"/>
+
+            <EditText
+                android:id="@+id/ETContraseña"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:text="puraprogramacion"
+                android:inputType="textPassword"/>
+
+            <SurfaceView
+                android:id="@+id/camara"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnIniciar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar Camara"/>
+
+                <Button
+                    android:id="@+id/btnCapturar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capturar"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TVUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicacion: "/>
+
+            <Button
+                android:id="@+id/btnEnviarCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar Correo"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
